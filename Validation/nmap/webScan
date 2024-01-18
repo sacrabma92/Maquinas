@@ -1,0 +1,10 @@
+# Nmap 7.94SVN scan initiated Thu Jan 18 00:17:48 2024 as: nmap --script http-enum -p80 -oN webScan 10.10.11.116
+Nmap scan report for 10.10.11.116
+Host is up (0.38s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
+| http-enum: 
+|_  /account.php: Possible admin folder
+
+# Nmap done at Thu Jan 18 00:18:22 2024 -- 1 IP address (1 host up) scanned in 33.50 seconds
