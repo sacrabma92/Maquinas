@@ -1,0 +1,26 @@
+# Nmap 7.94SVN scan initiated Fri Jan 19 16:07:06 2024 as: nmap -p22,135,445 -sCV -oN targeted 10.10.11.106
+Nmap scan report for 10.10.11.106
+Host is up (0.10s latency).
+
+PORT    STATE    SERVICE      VERSION
+22/tcp  filtered ssh
+135/tcp open     msrpc        Microsoft Windows RPC
+445/tcp open     microsoft-ds Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+Service Info: Host: DRIVER; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+|_clock-skew: mean: 6h59m59s, deviation: 0s, median: 6h59m59s
+| smb2-time: 
+|   date: 2024-01-20T04:07:20
+|_  start_date: 2024-01-20T03:59:54
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jan 19 16:07:55 2024 -- 1 IP address (1 host up) scanned in 48.86 seconds
