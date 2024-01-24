@@ -1,0 +1,6 @@
+user and password
+
+
+admin:jEhdIekWmdjE
+
+asteriskuser:jEhdIekWmdjE
