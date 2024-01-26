@@ -1,0 +1,11 @@
+# Nmap 7.94 scan initiated Fri Jan 26 10:41:05 2024 as: nmap --script http-enum -p80 -oN webScan 10.10.10.51
+Nmap scan report for 10.10.10.51
+Host is up (0.094s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
+| http-enum: 
+|   /README.txt: Interesting, a readme.
+|_  /images/: Potentially interesting directory w/ listing on 'apache/2.4.25 (debian)'
+
+# Nmap done at Fri Jan 26 10:41:18 2024 -- 1 IP address (1 host up) scanned in 13.40 seconds
